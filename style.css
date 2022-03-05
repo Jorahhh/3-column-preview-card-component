@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/*font-family: 'Lexend Deca', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/*font-family: 'Big Shoulders Display', cursive;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------MOBILE FIRST--------------*/
+
+body{
+    height: 210vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color:  hsl(0, 0%, 95%);
+}
+
+.main{
+    width: 375px;
+    margin: 20px 0;
+    text-align: left;
+
+}
+
+.column1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 460px;
+}
+
+
+.column2{
+    background-color: hsl(184, 100%, 22%);
+    height: 460px;
+}
+
+.column3{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 460px;
+}
+
+h1{
+    font-family:'Big Shoulders Display', cursive; ;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    margin: 30px 50px 0 50px;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 30px 75px 0 50px;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+img{
+    margin: 50px 50px 0 50px;
+}
+
+button{
+    width: 150px;
+    margin: 30px 0 0 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid;
+    font-size: 1em;
+    background-color: white;
+    cursor: pointer;
+}
+.column1 button{
+    color: hsl(31, 77%, 52%);
+}
+.column1 button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    transition: 0.2s;
+}
+
+.column2 button{
+    color:hsl(184, 100%, 22%);
+}
+.column2 button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color:hsl(184, 100%, 22%);
+    transition: 0.2s;
+}
+
+.column3 button {
+    color: hsl(179, 100%, 13%);
+}
+.column3 button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    transition: 0.2s;
+}
+
+.attribution {
+    margin: 20px;
+}
+
+@media  (max-width: 1600px) and (min-width: 800px) {
+
+    body{
+        height: 100vh;
+    }
+    .main{
+        height: 40rem;
+        width: 60rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .column1, .column2, .column3{
+        height: 530px;
+        width: 450px;
+    }
+
+    .column1 {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+    .column3 {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    button{
+        margin: 60px 0 0 50px
+    }
+
+   .attribution{
+       display: none;
+   }
+
+
+
+}
